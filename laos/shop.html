@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANTE SHOP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Logo Styling */
+        header img {
+            width: 150px; /* Adjust the size as needed */
+            height: auto; /* Keep aspect ratio of logo */
+        }
+
+        header h1 {
+            margin: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .product-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-item h3 {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+  .qr-code {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .contact-info .location {
+            display: flex;
+            align-items: center;
+        } 
+ </style>
+</head>
+<body>
+
+<header>
+    <!-- Logo added here -->
+    <img src="aligeri.png" alt="DANTE SHOP Logo"> <!-- Replace with your logo file -->
+    <h1>DANTE SHOP</h1>
+    <p>Your Destination for Premium Skin & Beard Care</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="home">
+    <h2>Welcome to Dante Shop!</h2>
+    <p>Explore our exclusive range of high-quality products for your skin and beard. From beard oils to skincare essentials, we have everything to keep you looking and feeling great!</p>
+</div>
+
+<div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="product">
+        <div class="product-item">
+            <img src="oil.jpg" alt="Beard Growth Oil">
+            <h3>Beard Growth Oil</h3>
+            <p>Promotes healthy beard growth and adds shine to your beard.</p>
+            <p><strong>$19.99</strong></p>
+        </div>
+        <div class="product-item">
+            <img src="balm.jpg" alt="Beard Balm">
+            <h3>Beard Balm</h3>
+            <p>Soothes and tames your beard for a soft and manageable feel.</p>
+            <p><strong>$22.99</strong></p>
+        </div>
+        <div class="product-item">
+            <img src="face.jpg" alt="Moisturizing Face Cream">
+            <h3>Moisturizing Face Cream</h3>
+            <p>Hydrates and nourishes your skin, leaving it smooth and fresh.</p>
+            <p><strong>$24.99</strong></p>
+        </div>
+        <div class="product-item">
+            <img src="shave.jpg" alt="Shaving Cream">
+            <h3>Shaving Cream</h3>
+            <p>Provides a smooth, irritation-free shave every time.</p>
+            <p><strong>$15.99</strong></p>
+        </div>
+        <div class="product-item">
+            <img src="shampo.jpg" alt="Beard Shampoo">
+            <h3>Beard Shampoo</h3>
+            <p>Gentle on your beard, strong on dirt. Keeps your beard clean and fresh.</p>
+            <p><strong>$18.99</strong></p>
+        </div>
+        <div class="product-item">
+            <img src="comb.jpg" alt="Beard Comb">
+            <h3>Beard Comb</h3>
+            <p>Perfect for detangling and styling your beard without causing damage.</p>
+            <p><strong>$9.99</strong></p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need help with an order, feel free to reach out to us!</p>
+
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:your-email@example.com">danteshop531@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+1234567890">0688753977</a></p>
+        <p><strong>Location:</strong> Lagja:6 Rruga:Hysen Kertusha, Durres, Albania</p>
+    <div class="qr-code">
+                <img src="qm.png" alt="QR Code" width="100" height="100"> <!-- Replace with your QR code image file -->
+            </div>
+        </div>
+      
+    </div>
+
+
+    <!-- Contact Form Section -->
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 Dante Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
